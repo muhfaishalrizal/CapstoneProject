@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2"
+    tools:context=".ui.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/login_bg">
+
+                <TextView
+                    android:id="@+id/tvAyo"
+                    style="@style/AppTheme.TextTitleLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:text="@string/text_ayo"
+                    android:textColor="@color/color_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvIkut"
+                    style="@style/AppTheme.TextTitleLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ikut"
+                    android:textColor="@color/color_3"
+                    app:layout_constraintStart_toStartOf="@+id/tvAyo"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAyo" />
+
+                <TextView
+                    android:id="@+id/tvEvent"
+                    style="@style/AppTheme.TextTitleLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Event..."
+                    android:textColor="@color/color_3"
+                    app:layout_constraintStart_toStartOf="@+id/tvIkut"
+                    app:layout_constraintTop_toBottomOf="@+id/tvIkut" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_login"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
+
+                <TextView
+                    android:id="@+id/tvHello"
+                    style="@style/AppTheme.TextTitleLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Hello"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvDescHello"
+                    style="@style/AppTheme.TextMain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:text="Isi email dan password agar bisa masuk."
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/tvHello"
+                    app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textUsername"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="32dp"
+                    android:hint="Masukan Email"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDescHello"
+                    app:startIconDrawable="@drawable/ic_email">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtUsernameSignUp"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/bg_edit_text1"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/textPw"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:hint="Masukan Password"
+                    app:endIconMode="password_toggle"
+                    app:layout_constraintEnd_toEndOf="@+id/textUsername"
+                    app:layout_constraintStart_toStartOf="@+id/textUsername"
+                    app:layout_constraintTop_toBottomOf="@+id/textUsername"
+                    app:startIconDrawable="@drawable/ic_password">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPasswordLogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/bg_edit_text1"
+                        android:inputType="textPassword" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:background="@drawable/button1"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Masuk"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textPw" />
+
+                <TextView
+                    android:id="@+id/tvAtau"
+                    style="@style/AppTheme.TextMain"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Atau"
+                    app:layout_constraintEnd_toEndOf="@+id/btnLogin"
+                    app:layout_constraintStart_toStartOf="@+id/btnLogin"
+                    app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+
+                <Button
+                    android:id="@+id/btnLoginWithGoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button2"
+                    android:drawableLeft="@drawable/logos_google"
+                    android:fontFamily="@font/poppins_regular"
+                    android:paddingLeft="10dp"
+                    android:text="Masuk dengan Google"
+                    android:textAllCaps="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvAtau" />
+
+                <TextView
+                    android:id="@+id/tvBelumPunya"
+                    style="@style/AppTheme.TextMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Belum Punya Akun ? "
+                    app:layout_constraintEnd_toEndOf="@+id/btnLoginWithGoogle"
+                    app:layout_constraintStart_toStartOf="@+id/btnLoginWithGoogle"
+                    app:layout_constraintTop_toBottomOf="@+id/btnLoginWithGoogle" />
+
+                <TextView
+                    android:id="@+id/tvDaftarDisini"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_extra_bold"
+                    android:text="Daftar di Sini"
+                    android:textColor="@color/color_1"
+                    app:layout_constraintEnd_toEndOf="@+id/tvBelumPunya"
+                    app:layout_constraintStart_toStartOf="@+id/tvBelumPunya"
+                    app:layout_constraintTop_toBottomOf="@id/tvBelumPunya" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

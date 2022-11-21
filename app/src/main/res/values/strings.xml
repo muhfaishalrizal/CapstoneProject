@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Capstone</string>
+    <string name="text_ayo">Ayo</string>
+    <string name="tv_masuk">Masuk</string>
+    <string name="tvGaes">Gaes...</string>
+    <string name="text_desc">Silahkan Isi email dan password Anda, agar bisa masuk.</string>
+</resources>
