@@ -1,0 +1,1 @@
+package com.example.capstone.utilclass Constanta {    companion object{        const val SPLASH_SCREEN_TIMER: Long = 3000//        const val BASE_URL= "https://story-api.dicoding.dev/v1/"        const val BASE_URL= "https://faishol-production.up.railway.app/"    }}

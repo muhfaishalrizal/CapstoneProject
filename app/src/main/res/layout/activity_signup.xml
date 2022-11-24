@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/color_2"
-    tools:context=".ui.sign_up.SignupActivity">
+    tools:context=".ui.sign_up.SignUpActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,9 +53,7 @@
                     android:textColor="@color/color_3"
                     app:layout_constraintStart_toStartOf="@+id/tvIkut"
                     app:layout_constraintTop_toBottomOf="@+id/tvIkut" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </LinearLayout>
 
         <LinearLayout
@@ -92,6 +90,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="@+id/tvHello"
                     app:layout_constraintTop_toBottomOf="@+id/tvHello" />
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/textUsername"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -136,7 +135,6 @@
                         android:inputType="textEmailAddress" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/textPw"
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -153,7 +151,7 @@
                     app:startIconDrawable="@drawable/ic_password">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edtPasswordLogin"
+                        android:id="@+id/edtPasswordSignUp"
                         android:layout_width="match_parent"
                         android:layout_height="70dp"
                         android:background="@drawable/bg_edit_text1"
@@ -161,11 +159,11 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
-                    android:id="@+id/btnLogin"
+                    android:id="@+id/btnSignUp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="32dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/button1"
                     android:fontFamily="@font/poppins_regular"
@@ -184,9 +182,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Sudah Punya Akun ? "
-                    app:layout_constraintEnd_toEndOf="@+id/btnLogin"
-                    app:layout_constraintStart_toStartOf="@+id/btnLogin"
-                    app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+                    app:layout_constraintEnd_toEndOf="@+id/btnSignUp"
+                    app:layout_constraintStart_toStartOf="@+id/btnSignUp"
+                    app:layout_constraintTop_toBottomOf="@+id/btnSignUp" />
 
                 <TextView
                     android:id="@+id/tvMasukDisini"

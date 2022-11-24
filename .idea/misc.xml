@@ -10,9 +10,21 @@
         <entry key="app/src/main/res/drawable/bg_login.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/button1.xml" value="0.1385" />
         <entry key="app/src/main/res/drawable/button2.xml" value="0.1385" />
+        <entry key="app/src/main/res/layout/activity_detail.xml" value="0.11283783783783784" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.12" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.159375" />
-        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_profile.xml" value="0.11283783783783784" />
+        <entry key="app/src/main/res/layout/activity_signup.xml" value="0.15" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.11283783783783784" />
+        <entry key="app/src/main/res/layout/fragment_add.xml" value="0.13" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_maps.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_profile.xml" value="0.13" />
+        <entry key="app/src/main/res/layout/fragment_search.xml" value="0.17" />
+        <entry key="app/src/main/res/layout/fragment_u.xml" value="0.11283783783783784" />
+        <entry key="app/src/main/res/layout/item_event.xml" value="0.13" />
+        <entry key="app/src/main/res/layout/layout_error.xml" value="0.11216216216216217" />
+        <entry key="app/src/main/res/menu/bottom_menu.xml" value="0.11216216216216217" />
       </map>
     </option>
   </component>
